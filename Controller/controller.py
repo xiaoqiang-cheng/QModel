@@ -1,12 +1,13 @@
 from View.view import View
 from Utils.common_utils import *
 import sys
+import qdarktheme
 
 class Controller():
     def __init__(self) -> None:
         self.app = QApplication([])
         self.view = View()
-
+        qdarktheme.setup_theme()
 
 
     def run(self):
